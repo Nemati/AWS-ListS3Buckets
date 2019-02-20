@@ -23,5 +23,14 @@
  - filter: Filter the output (e.g.: s3://mybucket/Folder/SubFolder/log*)
  - help: Help Function
  - version: Output the version of ListS3Buckets
+ ### Example
+ `go run main.go -ls -groupBy Region -filter  s3://hani-first/test01/subTest01/*.txt -cost`
  
+ This command filters the output for hani-first bucket. It checks for all files with txt extension in test01/subTest01/ folder. It also shows the cost of the account. 
+ 
+<a href="https://ibb.co/8x9b2kv"><img src="https://i.ibb.co/n1jBfpd/example1.png" alt="example1" border="0"></a> 
 
+`go run main.go -ls -groupBy Storage`
+ This command all available buckets and group them based on their storage class.
+
+<a href="https://ibb.co/PxQN5Fh"><img src="https://i.ibb.co/nrCbD6c/example2.png" alt="example2" border="0"></a>
