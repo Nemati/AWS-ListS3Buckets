@@ -31,6 +31,13 @@
 <a href="https://ibb.co/8x9b2kv"><img src="https://i.ibb.co/n1jBfpd/example1.png" alt="example1" border="0"></a> 
 
 `go run main.go -ls -groupBy Storage`
- This command all available buckets and group them based on their storage class.
+
+ This command output all available buckets and group them based on their storage class.
 
 <a href="https://ibb.co/PxQN5Fh"><img src="https://i.ibb.co/nrCbD6c/example2.png" alt="example2" border="0"></a>
+
+`go run main.go -ls -groupBy Region`
+
+This command output all available buckets and group them based on their Region.
+
+<a href="https://ibb.co/g6MPBwT"><img src="https://i.ibb.co/8XDdS25/example3.png" alt="example3" border="0"></a>
