@@ -406,7 +406,9 @@ func lsBuckets() map[string][]bucketInfo {
 					totalSizeInRR += *objectsInBuckets.Size
 				}
 			}
-
+			if resultListBucketsWithLocation.IsTruncated == nil {
+				break
+			}
 			// update trunc to see if there is more objects
 			trunc = *resultListBucketsWithLocation.IsTruncated
 			if trunc {
